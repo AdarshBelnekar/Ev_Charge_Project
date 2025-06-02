@@ -62,8 +62,8 @@ export default {
   methods: {
     async handleSubmit() {
       const url = this.isEdit
-        ? `http://localhost:5000/api/station/update/${this.form._id}`
-        : "http://localhost:5000/api/station/add";
+        ? `https://ev-charge-project.onrender.com/api/station/update/${this.form._id}`
+        : "https://ev-charge-project.onrender.com/api/station/add";
 
       const method = this.isEdit ? "PUT" : "POST";
 
