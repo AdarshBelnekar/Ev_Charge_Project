@@ -140,7 +140,7 @@ export default {
 
       try {
         if (this.isRegister) {
-          const response = await axios.post('http://localhost:5000/api/user/register', {
+          const response = await axios.post('https://ev-charge-project.onrender.com/api/user/register', {
             name: this.form.name.trim(),
             email: this.form.email.trim(),
             password: this.form.password,
@@ -149,7 +149,7 @@ export default {
           alert("Registration successful! Please login.");
           this.toggleForm();
         } else {
-          const response = await axios.post('http://localhost:5000/api/user/login', {
+          const response = await axios.post('https://ev-charge-project.onrender.com/api/user/login', {
             email: this.form.email.trim(),
             password: this.form.password,
           });
