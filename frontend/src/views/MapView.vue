@@ -84,7 +84,7 @@ export default {
         attribution: '&copy; OpenStreetMap contributors'
       }).addTo(this.map)
 
-      fetch('http://localhost:5000/api/station/list')
+      fetch('https://ev-charge-project.onrender.com/api/station/list')
         .then(res => res.json())
         .then(res => {
           this.chargers = res.data
