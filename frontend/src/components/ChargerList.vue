@@ -93,7 +93,7 @@ const filters = ref({
 
 const fetchChargers = () => {
   loading.value = true;
-  fetch('http://localhost:5000/api/station/list')
+  fetch('https://ev-charge-project.onrender.com')
     .then(res => res.json())
     .then(res => {
       chargers.value = res.data;
