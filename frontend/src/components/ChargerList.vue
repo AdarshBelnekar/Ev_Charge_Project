@@ -106,7 +106,7 @@ const fetchChargers = () => {
 
 const deleteCharger = (id) => {
   if (confirm('Are you sure you want to delete this charger?')) {
-    fetch(`http://localhost:5000/api/station/remove/${id}`, { method: 'DELETE' })
+    fetch(`https://ev-charge-project.onrender.com/api/station/remove/${id}`, { method: 'DELETE' })
       .then(() => fetchChargers())
       .catch(err => console.error('Delete failed:', err));
   }
